@@ -1,5 +1,48 @@
-# CSV Combiner
+# CSV Combiner - Austin Gilmore Solution
 
+## Virtual Environment Setup
+This script utilizes open source [pandas](https://pandas.pydata.org/docs/) library for csv manipulation. To avoid installing package globally, a virtual environment should be used.
+
+1. Create virtual environment using [virtualenv](https://virtualenv.pypa.io/en/latest/) CLI tool.
+
+```
+$ virtualenv venv
+```
+
+2. Activate virtual environment.
+
+```
+$ ./venv/Scripts/activate
+```
+
+3. Install required dependencies.
+
+```
+$ pip install -r requirements.txt
+```
+
+## Execution Instructions
+*Before executing, ensure csv-combiner folder is current working directory (ex. /path/to/dir/ProgrammingChallenges/csv-combiner) and virtual environment is activated.
+
+To combine multiple csv files and output to stdout:
+
+```
+$ python ./csv_combiner.py ./fixtures/accessories.csv ./fixtures/clothing.csv
+```
+
+To combine multiple csv files and redirect output to new csv file:
+
+```
+$ python ./csv_combiner.py ./fixtures/accessories.csv ./fixtures/clothing.csv > combined.csv
+```
+
+To run unit tests:
+
+```
+$ python ./combiner_test.py
+```
+
+# Original Prompt
 Write a command line program that takes several CSV files as arguments. Each CSV
 file (found in the `fixtures` directory of this repo) will have the same
 columns. Your script should output a new CSV file to `stdout` that contains the

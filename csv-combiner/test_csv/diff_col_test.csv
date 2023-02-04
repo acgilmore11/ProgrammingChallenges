@@ -1,0 +1,12 @@
+city,state,name,age,gender,filename
+Austin,Texas,,,,test1.csv
+Baker,California,,,,test1.csv
+Canton,Michigan,,,,test1.csv
+Denver,Colorado,,,,test1.csv
+Eugene,Oregon,,,,test1.csv
+,,austin,12.0,M,test2.csv
+,,barbie,20.0,F,test2.csv
+,,chad,48.0,M,test2.csv
+,,debra,30.0,F,test2.csv
+,,elliot,34.0,M,test2.csv
+

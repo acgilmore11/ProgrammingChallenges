@@ -21,3 +21,10 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+/csv-combiner/__pycache__
+/csv-combiner/venv
+
+
+
+
